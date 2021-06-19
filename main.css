@@ -13,19 +13,19 @@ body {
 
 h1 {
     color: #E03030;
-    font-size: 1.7em;
+    font-size: 2.5em;
     padding: 0px;
     margin: 0.5em 0 0.35em 0;
 }
 
 h2 {
-    color: #F8F813;
+    color: #E03030;
     font-size: 1.7em;
     padding: 0px;
     margin: 0.5 0 0.35em 0;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.4em;
     color: #555;
     padding: 0px;
@@ -33,7 +33,7 @@ p {
 }
 
 ol {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0 0 0 1.0em;
     padding: 0 0 0 1.0em;
 }
@@ -44,7 +44,7 @@ ol li {
 }
 
 a, a:visited {
-    color: #C64322;
+    color: #333;
 }
 a:hover {
     color: #333;
@@ -73,20 +73,22 @@ hr {
 header {
     padding: 2.5em 0 0.5em;
     margin: 0 0 2.0em;
-    background: #F8F813 center 0px;
+    background: #F8F813 url(images/water.jfif) center;
 }
 
 header h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #E03030;
     font-size: 7.5em;
+    text-align: center;
     letter-spacing: -0.025em;
+    text-align: center;
     margin: 0;
 }
 header h2 {
     font-weight: 300;
     font-size: 3.8em;
-    color: #F8F813;
+    color: #E03030;
     margin: -0.4em 0 0 1.0em;
     text-transform: uppercse;
     letter-spacing: 0.05em;
@@ -104,6 +106,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 nav li {
@@ -115,6 +118,7 @@ nav li a, nav li a:visited {
     text-decoration: none;
     color: #c64322;
     padding: 0.3em 0.6em;
+    
 }
 
 nav li a:hover {
@@ -130,23 +134,26 @@ section#sidebar {
     float: left;
     position: relative;
     display: block;
-    background-color: #fff;
+    background-color: #F8F813;
     margin: 1.5em 0.3em 1.5em;
     padding: 1.7em 0.5em 2.0em 1.7em;
-    border-left: #E03030 solid 5px;
-    border-right: #E03030 solid 5px;
+    border-radius: 2em;
+    border-left: #E03030 solid 2px;
+    border-right: #E03030 solid 2px;
 }
 
 /*Main Section*/
 section#main {
     /*background-color: #FCFBE6;*/
     width: 870px;
-    background-color: rgba(252,251,243,037);
+    background-color: #F8F813;
     margin: 0 0 2.0em;
     padding: 1.5em 0 2.0em 1.5em;
     display: inline-block;
     border-radius: 2em;
     box-shadow: 1px 1px 5px #777;/* offset-x | offset-y | blurradius | color */
+    border-left: #E03030 solid 2px;
+    border-right: #E03030 solid 2px;
 }
 section div.panel{
     float: right;
@@ -154,7 +161,7 @@ section div.panel{
     width: 250px;
     margin: 0 0.5em 2.0em 0.5em;
     padding: 1.0em;
-    bakcground-color: #fff;
+    background-color: #fff;
     border: #ccc solid 1px;
     border-radius: 0.6em;
 
@@ -166,5 +173,32 @@ section div.panel img.fishType {
     /*Footer*/
 footer {
     background-color: #F8F813;
-    height:
+    height: 25px;
+    font-size: 1.2em;
+    color: #000000;
+    text-align: center;
+    padding: 1.5em 2.0em;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
 }
